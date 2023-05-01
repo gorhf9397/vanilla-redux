@@ -13,22 +13,22 @@
 
 ## Action
 
-- ✅ Action : redux에서 function을 부를 때 쓰는 두 번째 parameter 혹은 argument으로 reducer와 소통하기 위한 방법
-- ✅ Reducer에게 Action을 보내는 방법 : store.dispatch({key: value});
+- ✅ **Action** : **redux**에서 function을 부를 때 쓰는 두 번째 parameter 혹은 argument으로 **reducer**와 소통하기 위한 방법
+- ✅ **Reducer**에게 **Action**을 보내는 방법 : store.dispatch({key: value});
 
 ## Subscribe
 
-- ✅ Subscribe : store 안에 있는 변화 감지
+- ✅ **Subscribe** : **store** 안에 있는 변화 감지
   store.subscribe(func); // store안의 변화를 감지하면 func 실행
 
 ## Recap
 
-- ✅ reducer : 현재 상태의 application과 함께 불려지는 function (+ with action)
-  return하는 것은 application의 state가 됨
-- ✅ action : reducer와 소통하는 방법으로 Object여야 하며 그 key 이름은 항상 type임 (바꿀 수 없음)
-- ✅ dispatch : reducer에게 action을 보내는 방법
-- ✅ subscribe : store의 변화를 감지하면 인자값으로 준 함수를 실행
-- ✅ switch가 자주 쓰임<br>
+- ✅ **reducer** : 현재 상태의 **application**과 함께 불려지는 function (+ with action)
+  return하는 것은 **application**의 state가 됨
+- ✅ **action** : **reducer**와 소통하는 방법으로 **Object**여야 하며 그 key 이름은 항상 type임 (바꿀 수 없음)
+- ✅ **dispatch** : **reducer**에게 **action**을 보내는 방법
+- ✅ **subscribe** : **store**의 변화를 감지하면 인자값으로 준 함수를 실행
+- ✅ **switch**가 자주 쓰임<br>
 
 ```JavaScript
 switch(action.type){
