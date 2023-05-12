@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 import ToDo from "../components/ToDo";
 import { add } from "../Store";
 
 const Home = ({ toDos, addToDo }) => {
   const [text, setText] = useState("");
+  // const todo = useSelector((state) => state);
   const onChange = (e) => {
     const {
       target: { value },

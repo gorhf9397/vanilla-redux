@@ -42,3 +42,32 @@ switch(action.type){
 ```
 
 - ✅ string으로 바로 쓰는 대신에 const variable로 선언해서 사용하기 -> 에러 발견 용이
+
+# Redux-Toolkit
+
+## createReducer()
+
+- https://redux-toolkit.js.org/api/createReducer
+
+## "Map Object" 표기법과 함께 사용​
+
+이 표기법은 조금 더 짧지만 TypeScript가 아닌 JavaScript에서만 작동하고 IDE와의 통합이 적으므로 대부분의 경우 "Builder Callback" 표기법을 권장합니다.
+
+- https://redux-toolkit.js.org/api/createReducer#usage-with-the-map-object-notation
+
+"Builder 콜백" 표기법과 함께 사용 (타입스크립트 사용시 추천 방법)
+createReducer를 사용하는 권장 방법은 TypeScript 및 대부분의 IDE에서 가장 잘 작동하는 "Builder Callback" 표기법입니다.
+
+- https://redux-toolkit.js.org/api/createReducer#usage-with-the-builder-callback-notation
+
+## immer
+
+현재 상태를 변경하여 다음 불변 상태를 만듭니다.
+
+- https://github.com/immerjs/immer
+
+## Array.prototype.unshift()
+
+unshift() 메서드는 새로운 요소를 배열의 맨 앞쪽에 추가하고, 새로운 길이를 반환합니다.
+
+- https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
